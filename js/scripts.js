@@ -36,7 +36,8 @@ console.log(color)
 
 console.log(destination)
     $(".results").show();
-    $(".vacationSelection").text(destination);
+    $(".vacationSelection").text(destination).css("color", color);
+    $(".nameGiven").text(name);
     event.preventDefault();
   });
 });
