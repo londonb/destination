@@ -34,7 +34,7 @@ $(document).ready(function(){
     $(".results").show();
     $(".vacationSelection").text(destination).css("color", color);
     $(".nameGiven").text(name);
-    $(".photoSelection").append('<img src="img/' + destination + '.jpg">');
+    $(".photoSelection").empty().append('<img src="img/' + destination + '.jpg">');
     event.preventDefault();
   });
 });
