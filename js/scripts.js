@@ -2,7 +2,6 @@ $(document).ready(function(){
 
   $("form#blanks").submit(function(event){
 
-
     var temp = $("input[name='tempOptions']:checked").val();
     var citytype = $("input[name='cityTypeOptions']:checked").val();
     var name = $("input#inputName").val();
@@ -11,7 +10,7 @@ $(document).ready(function(){
 
 
     if (age < 18) {
-      var destination = "Disney World";
+      var destination = "Disney";
 
     } else {
       if (temp === 'warm'){
