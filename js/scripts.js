@@ -10,8 +10,28 @@ console.log(age)
 console.log(name)
 console.log(color)
     if (age < 18) {
-      var destination ="Disney World";
+      var destination = "Disney World";
+
+    } else {
+      if (temp === 'warm'){
+        if (citytype === 'urban'){
+          var destination = "Honalulu";
+        } else {
+          var destination = "Fiji";
+        }
+
+
+    } else {
+      if (citytype === 'urban'){
+        var destination = "Moscow";
+      } else {
+        var destination = "Nuuk, Greenland";
+      }
     }
+  }
+
+
+
 
 
 console.log(destination)
