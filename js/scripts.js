@@ -26,7 +26,7 @@ $(document).ready(function(){
         if (citytype === 'urban'){
           var destination = "Moscow";
         } else {
-          var destination = "Nuuk, Greenland";
+          var destination = "Nuuk";
         }
       }
     }
@@ -35,6 +35,7 @@ $(document).ready(function(){
     $(".results").show();
     $(".vacationSelection").text(destination).css("color", color);
     $(".nameGiven").text(name);
+    $(".photoSelection").append('<img src="img/' + destination + '.jpg">');
     event.preventDefault();
   });
 });
