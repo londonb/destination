@@ -42,26 +42,31 @@
         <div id="tempInput">
           <h5>Do you want to go some place warm or cold?</h5>
           <label class="radio-inline">
-            <input type="radio" name="tempOptions" id="warm">I like to stay warm
+            <input type="radio" name="tempOptions" id="warm" value="warm">I like to stay warm
           </label>
           <label class="radio-inline">
-            <input type="radio" name="tempOptions" id="cold">I don't mind if it is cold
+            <input type="radio" name="tempOptions" id="cold" value="cold">I don't mind if it is cold
           </label>
         </div>
 
         <div id="cityTypeInput">
           <h5>Do you like being in a busy city or a quiet town?</h5>
           <label class="radio-inline">
-            <input type="radio" name="cityTypeOptions" id="urban">I enjoy being around people
+            <input type="radio" name="cityTypeOptions" id="urban" value="urban">I enjoy being around people
           </label>
           <label class="radio-inline">
-            <input type="radio" name="cityTypeOptions" id="rural">I don't feel like being around too many people
+            <input type="radio" name="cityTypeOptions" id="rural" value="rural">I don't feel like being around too many people
           </label>
         </div><br>
 
         <button type="submit" class="btn btn-primary">Find your next vacation destination</button>
-
       </form>
+
+      <div class="results">
+        <div>
+          <p>You should go to <span class="vacationSelection"></span>.</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
